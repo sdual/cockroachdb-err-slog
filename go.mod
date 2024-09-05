@@ -1,3 +1,3 @@
-module github.com/sdual/cockroachdb-err-slog
+module github.com/sdual/roachslog
 
 go 1.23.0
