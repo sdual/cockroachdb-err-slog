@@ -13,6 +13,7 @@ const (
 )
 
 type (
+	// RoachSlogHandler is the slog handler to format stacktrace of logs cockroachdb/errors.
 	RoachSlogHandler struct {
 		handler       slog.Handler
 		errAttrKey    string
@@ -24,7 +25,6 @@ type (
 
 // NewReachSlogHandler creates a new RoachSlogHandler instance.
 func NewReachSlogHandler(handler slog.Handler, opts ...opt) RoachSlogHandler {
-
 	rs := &RoachSlogHandler{
 		handler:       handler,
 		errAttrKey:    defaultErrorAttrKey,
