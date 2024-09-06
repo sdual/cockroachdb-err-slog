@@ -25,7 +25,7 @@ func main() {
 	rsHandler := roachslog.NewReachSlogHandler(handler)
 	slog.SetDefault(slog.New(rsHandler))
 
-  err := doSomething()
+	err := doSomething()
 	slog.Error("error occurred", roachslog.Err(err))
 }
 
