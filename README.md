@@ -2,9 +2,14 @@
 
 [![Go](https://github.com/sdual/roachslog/actions/workflows/go-test.yml/badge.svg)](https://github.com/sdual/roachslog/actions/workflows/go-test.yml)
 
-This library allows cockroachdb/errors stacktrace to be output as a slog attribute.
+This library allows cockroachdb/errors stacktrace to be output as an attribute of slog.
+
+```sh
+$ go get github.com/sdual/roachslog
+```
 
 ## Usage
+The following is an example of extracting stacktrace as an attribute of slog.
 
 ```go
 package main
